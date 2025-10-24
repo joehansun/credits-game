@@ -26,10 +26,11 @@ model Account {
   escrow    Int      @default(0) // in-match locked
 
   user      User     @relation(fields: [userId], references: [id])
-
   lines     JournalLine[]
 
   @@index([userId, type])
+
+  @@unique([userId, type], name: "userId_type")
 }
 
 enum AccountType {
