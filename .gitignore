@@ -1,0 +1,28 @@
+# Node / Next
+node_modules
+.next
+out
+.next/cache
+dist
+coverage
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store
+
+# Env & local
+.env
+.env.*.local
+.env.local
+.vercel
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+
+# Prisma
+prisma/migrations/**/README.md
